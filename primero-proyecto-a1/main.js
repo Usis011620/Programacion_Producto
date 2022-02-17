@@ -1,29 +1,23 @@
-var idUnicoFecha = ()=>{
+var generarIdUnicoFecha = ()=>{
     let fecha = new Date();
     return Math.floor(fecha.getTime()/1000).toString(16);
 };
-var app = new Vue({
+var appSistema = new Vue({
     el: '#appSistema',
     data: {
-       forms:{
-           'cliente':{ mostrar: false },
-           'categoria':{ mostrar: false },
-           'producto':{ mostrar: false },
-           'proveedor':{ mostrar: false },
-       }
+        forms:{
+            'cliente':{mostrar:false},
+            'producto':{mostrar:false},
+            'proveedor':{mostrar:false},
+            'categoria':{mostrar:false}
+        }
     },
-    methods: {
-        
-    },
-    created(){
-       
-    }
 });
-document.addEventListener('DOMContentLoaded', event=>{
-    let $element = document.querySelectorAll('.mostrar').forEach( (element,index)=>{
-        element.addEventListener('click', e=>{
-            app.forms[e.target.dataset.form].mostrar = true;
-            //app.forms[e.target.dataset.form].obtenerDatos();
+document.addEventListener('DOMContentLoaded', e=>{
+    let formularios = document.querySelectorAll('.mostrar').forEach(formulario=>{
+        formulario.addEventListener('click', evento=>{
+            let formulario = evento.target.dataset.form;
+            appSistema.forms[formulario].mostrar = true;
         });
     });
 });
