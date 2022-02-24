@@ -87,7 +87,6 @@ Vue.component('producto',{
             <div class="card text-white" id="carProducto">
                 <div class="card-header bg-primary">
                     Registro de Productos
-
                     <button type="button" class="btn-close text-end" data-bs-dismiss="alert" data-bs-target="#carProducto" aria-label="Close"></button>
                 </div>
                 <div class="card-body text-dark">
@@ -145,7 +144,6 @@ Vue.component('producto',{
             <div class="card text-white" id="carBuscarProducto">
                 <div class="card-header bg-primary">
                     Busqueda de Productos
-
                     <button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-target="#carBuscarProducto" aria-label="Close"></button>
                 </div>
                 <div class="card-body">
