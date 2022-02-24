@@ -68,7 +68,6 @@ Vue.component('categoria',{
             <div class="card text-white" id="carCategoria">
                 <div class="card-header bg-primary">
                     Registro de Categorias
-
                     <button type="button" class="btn-close text-end" data-bs-dismiss="alert" data-bs-target="#carCategoria" aria-label="Close"></button>
                 </div>
                 <div class="card-body text-dark">
@@ -105,7 +104,6 @@ Vue.component('categoria',{
             <div class="card text-white" id="carBuscarCategoria">
                 <div class="card-header bg-primary">
                     Busqueda de Categorias
-
                     <button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-target="#carBuscarCategoria" aria-label="Close"></button>
                 </div>
                 <div class="card-body">
